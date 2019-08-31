@@ -32,7 +32,7 @@ public class A1Novice {
 
 			}	
 			
-			System.out.println(initial + ". " + lastname + String.format("%.2f", total));
+			System.out.println(initial + ". " + lastname + ": " + String.format("%.2f", total));
 
 		}
 		
