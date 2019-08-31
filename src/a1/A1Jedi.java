@@ -23,28 +23,36 @@ public class A1Jedi {
 		
 		int[] num_customer = new int[totalcount];
 		int[] num_items = new int[totalcount];
-
+		
 		for (int i = 0; i < customercount; i++) {
 			
 			String firstname = scan.next();
 			String lastname = scan.next();
 			int itemtype = scan.nextInt();
+			
+			boolean[] checkcustomer = new boolean[totalcount];
 
+			
 			for (int a = 0; a < itemtype; a++) {
-				
 				
 				int itemcount = scan.nextInt();
 				String itemname = scan.next();
 				
-				
 				for (int b = 0; b < totalcount; b++) {
 					if (itemname.equals(itemlist[b])) {
+				
+						if (!checkcustomer[b]) {
 						num_customer[b]++;
+						checkcustomer[b] = true;
+						}
+						
 						num_items[b] = num_items[b] + itemcount;
 					}
 				
 				}
+				
 			}
+			
 			
 		}
 		scan.close();	

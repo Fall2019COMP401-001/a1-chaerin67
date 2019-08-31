@@ -54,9 +54,7 @@ public class A1Adept {
 			pricesum[i] = total;
 			
 		}
-		for (int v=0;v<pricesum.length;v++) {
-			System.out.println(pricesum[v]);
-		}
+
 		scan.close();
 		
 		String biggest = customername[calculatebiggest(pricesum)];
