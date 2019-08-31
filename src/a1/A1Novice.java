@@ -31,8 +31,8 @@ public class A1Novice {
 				total = total + quantity * price;
 
 			}	
-
-			System.out.println(initial + ". " + lastname + total);
+			
+			System.out.println(initial + ". " + lastname + String.format("%.2f", total));
 
 		}
 		
